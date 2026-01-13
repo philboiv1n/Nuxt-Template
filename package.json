@@ -1,0 +1,46 @@
+{
+  "name": "template_nuxt",
+  "version": "0.1.0",
+  "author": "Phil Boivin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prisma": "prisma",
+    "prisma:generate": "prisma generate",
+    "migrate": "prisma migrate deploy",
+    "migrate:dev": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "7.2.0",
+    "@prisma/client": "7.2.0",
+    "nuxt": "4.2.2",
+    "nuxt-security": "2.5.0",
+    "pg": "8.16.3"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "@types/pg": "8.15.6",
+    "dotenv": "16.4.7",
+    "eslint": "9.39.2",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-vue": "10.6.2",
+    "globals": "17.0.0",
+    "prettier": "3.7.4",
+    "prisma": "7.2.0",
+    "typescript-eslint": "8.52.0",
+    "vue-eslint-parser": "10.2.0"
+  }
+}
