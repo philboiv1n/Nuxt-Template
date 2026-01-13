@@ -59,6 +59,8 @@ POSTGRES_DB=CHANGEME_DB
 DATABASE_URL=postgres://CHANGEME_USER:CHANGEME_PASSWORD@db:5432/CHANGEME_DB
 ```
 
+Note: If your password contains URL-reserved characters (for example `:`, `/`, `?`, `#`, `[`, `]`, `@`, `%`, or spaces), URL-encode it in `DATABASE_URL`. `POSTGRES_PASSWORD` stays unencoded.
+
 The app refuses to start (dev and prod) while any value contains `CHANGEME`.
 If the database was already initialized, remove the volume to apply new credentials.
 
