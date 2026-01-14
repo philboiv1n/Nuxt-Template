@@ -34,6 +34,8 @@ services:
     environment:
       - NUXT_HOST=0.0.0.0
       - NUXT_PORT=3001
+      - CHOKIDAR_USEPOLLING=1
+      - CHOKIDAR_INTERVAL=200
     env_file:
       - .env
     command: sh -lc "npm install && npm run prisma:generate && npm run dev -- --host 0.0.0.0 --port 3001"
